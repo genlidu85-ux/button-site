@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charaset="UTF-8">
+<title>剣持</title>
+<style>
+    body {
+        text-align: center;
+        margin-top: 100px;
+        font-family: sans-serif;
+    }
+    button {
+        font-size: 30px;
+        padding: 20px 40px;
+        cursor: pointer;
+    }
+    </style>
+   </head>
+   <body>
+
+       <h1>剣持ボタン</h1>
+
+       <button onclink="playSound()">押せ</button>
+
+       <audio id="sound" srt="sound.mp3"></audio>
+
+       <script>
+        function playSound() {
+            const audio = document.getElementById("sound");
+            audio.currentTime = 0;
+            audio.play();
+        }
+       </script>
+
+</body>
+</html>
